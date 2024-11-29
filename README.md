@@ -14,7 +14,7 @@ http://arxiv.org/pdf/2406.18749.pdf
 https://pubmed.ncbi.nlm.nih.gov/39202119/      
 
 
-# CONTACT
+# Contact
 
 Name: A Seshaditya
 E-Mail: aditya@zedat.fu-berlin.de

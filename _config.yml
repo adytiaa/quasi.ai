@@ -8,14 +8,14 @@ description: [QML for CFD simulations]
 # Add custom CSS
 style: |
   body {
-    font-size: 18px;
+    font-size: 24px;
   }
   h1 {
-    font-size: 2.2em;
+    font-size: 2.8em;
   }
   h2 {
-    font-size: 1.8em;
+    font-size: 2.2em;
   }
   h3 {
-    font-size: 1.5em;
+    font-size: 1.8em;
   }

@@ -2,6 +2,17 @@
 layout: default
 title: Home
 ---
+![Placeholder Image](assets/images/quasi_1.png)
+![Placeholder Image](assets/images/quasi_2.png)
+![Placeholder Image](assets/images/quasi_3.png)
+![Placeholder Image](assets/images/quasi_4.png)
+![Placeholder Image](assets/images/quasi_5.png)
+![Placeholder Image](assets/images/quasi_6.png)
+![Placeholder Image](assets/images/quasi_7.png)
+![Placeholder Image](assets/images/quasi_8.png)
+![Placeholder Image](assets/images/quasi_9.png)
+![Placeholder Image](assets/images/quasi_10.png)
+![Placeholder Image](assets/images/quasi_11.png)
 
 # Quantum Machine Learning for Simulations
 

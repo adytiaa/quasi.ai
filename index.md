@@ -67,6 +67,7 @@ TAM: $3 Billion
 SAM: $700 million  
 SOM: $30 million  
 Market leaders: ANSYS, COMSOL, Siemens NX
+![Placeholder Image](assets/images/business_model.png)
 </div>
 
 ## Business Model

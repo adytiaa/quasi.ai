@@ -19,3 +19,22 @@ style: |
   h3 {
     font-size: 1.8em;
   }
+  .navigation {
+    background-color: #f5f5f5;
+    padding: 10px 0;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .navigation nav a {
+    margin: 0 15px;
+    color: #2879d0;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em;
+  }
+  .navigation nav a:hover {
+    text-decoration: underline;
+  }
+  .navigation nav a.active {
+    color: #333;
+  }

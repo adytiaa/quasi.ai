@@ -1,0 +1,15 @@
+<header>
+  <div class="inner">
+    <h1>{{ site.title }}</h1>
+    <h2>{{ site.description }}</h2>
+  </div>
+  <div class="navigation">
+    <nav>
+      {% for item in site.data.navigation %}
+        <a href="{{ item.link }}" {% if page.url == item.link %}class="active"{% endif %}>
+          {{ item.name }}
+        </a>
+      {% endfor %}
+    </nav>
+  </div>
+</header> 

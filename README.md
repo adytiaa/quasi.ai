@@ -6,8 +6,8 @@ Quantum Machine Learning for Enhancing Fluid Dynamic Simulations using PINNs and
 Leveraging quantum machine learning techniques to enhance fluid dynamic simulations using Physics-Informed Neural Networks (PINNs) and their quantum counterparts (Quantum PINNs or QPINNs). The study will explore various implementations, including attention-enhanced architectures and Physically-Informed Quantum Neural Networks (PI-QNNs). The aim is to demonstrate the potential of quantum computing in solving high-dimensional partial differential equations (PDEs) associated with fluid dynamics, improving computational efficiency and accuracy.
 
 Open source frameworks pennylane (QML), nvidia Modulus (PINNs)
-### https://pennylane.ai/  \
-### https://developer.nvidia.com/modulus \
+### https://pennylane.ai/  
+### https://developer.nvidia.com/modulus 
 
 ### Objectives
 1. Develop and evaluate classical PINNs for fluid dynamics simulations.
@@ -73,22 +73,22 @@ Attention mechanisms in QPINNs prioritize critical regions of the solution space
 
 
 
-Some reference papers which we are looking at in detail \
-#### https://www.mdpi.com/1099-4300/26/8/649 \
-#### https://arxiv.org/html/2304.11247v3    \
-#### http://arxiv.org/pdf/2406.18749.pdf    \
-#### https://pubmed.ncbi.nlm.nih.gov/39202119/  \      
+Some reference papers which we are looking at in detail 
+#### https://www.mdpi.com/1099-4300/26/8/649 
+#### https://arxiv.org/html/2304.11247v3    
+#### http://arxiv.org/pdf/2406.18749.pdf    
+#### https://pubmed.ncbi.nlm.nih.gov/39202119/        
 
 
 ## Contact
 
-Name: A Seshaditya \
+Name: A Seshaditya 
 
-E-Mail: aditya@zedat.fu-berlin.de \
+E-Mail: aditya@zedat.fu-berlin.de 
 
-Website: https://adytiaa.github.io/quasi.ai/ \
+Website: https://adytiaa.github.io/quasi.ai/ 
 
-LinkedIn: https://www.linkedin.com/in/a-seshaditya-7180822a5/  \
+LinkedIn: https://www.linkedin.com/in/a-seshaditya-7180822a5/  
 
 
 ## License

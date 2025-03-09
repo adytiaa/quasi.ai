@@ -1,3 +1,9 @@
+---
+layout: page
+title: "Crystal Growth CFD"
+permalink: /cg_pinns/
+---
+
 **Project Proposal: PINNs for Enhancing Single Crystal Growth Simulations**
 
 ### 1. **Project Title**

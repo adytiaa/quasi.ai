@@ -4,3 +4,9 @@ plugins:
 
 title: [QUASI]
 description: [QML for CFD simulations]
+
+collections:
+  pages:
+    output: true
+    permalink: /:path/
+

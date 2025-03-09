@@ -1,6 +1,7 @@
 ---
 layout: default
 title: CFD Crystalgrowth
+permalink: /CFD_Crystalgrowth/
 ---
 
 # CFD Crystal Growth

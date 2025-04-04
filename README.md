@@ -69,22 +69,24 @@ Multi-scale Entanglement Renormalization Ansatz (QMERA) extends tensor network t
 Attention mechanisms in QPINNs prioritize critical regions of the solution space, such as high-gradient areas in fluid flow. This is achieved through quantum-inspired attention layers, which:
 - Dynamically reallocate computational resources during training.
 - Enhance convergence rates by focusing on regions where PDE residuals are highest.
-- Integrate seamlessly with tensor networks and quantum circuits for hybrid optimization.
+- Integrate seamlessly with tensor networks and quantum circuits for hybrid optimization.     
 
 
-
-Some reference papers which we are looking at in detail 
+Some reference papers which we are looking at in detail
 #### https://www.mdpi.com/1099-4300/26/8/649 
 #### https://arxiv.org/html/2304.11247v3    
 #### http://arxiv.org/pdf/2406.18749.pdf    
-#### https://pubmed.ncbi.nlm.nih.gov/39202119/        
+#### https://pubmed.ncbi.nlm.nih.gov/39202119/   
+#### https://github.com/sjunhongshen/UnifiedPDESolvers
+#### https://www.emmi.ai/research/universal-physics-transformer
+#### https://arxiv.org/abs/2409.15683
 
 
 ## Contact
 
 Name: A Seshaditya 
 
-E-Mail: aditya@zedat.fu-berlin.de 
+E-Mail: aditya.a.sesh@alumni.tu-berlin.de, aditya@zedat.fu-berlin.de 
 
 Website: https://adytiaa.github.io/quasi.ai/ 
 

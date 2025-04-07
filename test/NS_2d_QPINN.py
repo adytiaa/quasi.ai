@@ -1,3 +1,5 @@
+# Solving PDEs using Quantum Physics-Inspired Neural Network approaches
+
 import torch
 import torch.nn as nn
 import pennylane as qml

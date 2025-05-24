@@ -24,7 +24,7 @@ Open source frameworks pennylane (QML), nvidia Modulus (PINNs)
 - Evaluate accuracy and computational performance on varying problem scales.
 
 #### 2. Quantum PINNs (QPINNs)
-- Utilize hybrid quantum-classical platforms like TensorFlow Quantum or Qiskit to design QPINNs.
+- Utilize hybrid quantum-classical platforms like TensorFlow Quantum or Qiskit or PennyLane to design QPINNs.
 - Employ PQCs to encode problem features and leverage variational quantum algorithms for optimization.
 - Train models using quantum simulators and available quantum hardware (e.g., IBM Quantum).
 
@@ -86,9 +86,9 @@ Some reference papers which we are looking at in detail
 
 Name: A Seshaditya 
 
-E-Mail: aditya.a.sesh@alumni.tu-berlin.de, aditya@zedat.fu-berlin.de 
+E-Mail: aditya.a.sesh@alumni.tu-berlin.de, aditya@zedat.fu-berlin.de, aditya@quasi.digital 
 
-Website: https://adytiaa.github.io/quasi.ai/ 
+Website: https://adytiaa.github.io/quasi.ai/  https://quasi.digital
 
 LinkedIn: https://www.linkedin.com/in/a-seshaditya-7180822a5/  
 
@@ -96,4 +96,3 @@ LinkedIn: https://www.linkedin.com/in/a-seshaditya-7180822a5/
 ## License
 
 This project is licensed under the MIT License. See the LICENSE file for details.
-

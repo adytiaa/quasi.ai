@@ -1,0 +1,85 @@
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>Crystal Growth Simulation</title>
+        <style>
+            body { font-family: Arial, sans-serif; margin: 20px; text-align: center; }
+            .slideshow { max-width: 90%; margin: 0 auto; }
+            .slideshow img { max-width: 100%; display: none; }
+            .controls { margin: 15px 0; }
+            button { padding: 8px 16px; margin: 0 5px; }
+            .frame-info { margin: 10px 0; }
+        </style>
+    </head>
+    <body>
+        <h1>Crystal Growth Simulation</h1>
+        <div class="slideshow">
+            <!-- Images will be added here -->
+    <img src="frames/frame_0000.png" id="frame0" class="frame"><img src="frames/frame_0001.png" id="frame1" class="frame"><img src="frames/frame_0002.png" id="frame2" class="frame"><img src="frames/frame_0003.png" id="frame3" class="frame"><img src="frames/frame_0004.png" id="frame4" class="frame"><img src="frames/frame_0005.png" id="frame5" class="frame"><img src="frames/frame_0006.png" id="frame6" class="frame"><img src="frames/frame_0007.png" id="frame7" class="frame"><img src="frames/frame_0008.png" id="frame8" class="frame"><img src="frames/frame_0009.png" id="frame9" class="frame"><img src="frames/frame_0010.png" id="frame10" class="frame"><img src="frames/frame_0011.png" id="frame11" class="frame"><img src="frames/frame_0012.png" id="frame12" class="frame"><img src="frames/frame_0013.png" id="frame13" class="frame"><img src="frames/frame_0014.png" id="frame14" class="frame"><img src="frames/frame_0015.png" id="frame15" class="frame"><img src="frames/frame_0016.png" id="frame16" class="frame"><img src="frames/frame_0017.png" id="frame17" class="frame"><img src="frames/frame_0018.png" id="frame18" class="frame"><img src="frames/frame_0019.png" id="frame19" class="frame">
+        </div>
+        <div class="frame-info">
+            Frame: <span id="frameNumber">1</span> / 20
+        </div>
+        <div class="controls">
+            <button onclick="prevFrame()">Previous</button>
+            <button onclick="playPause()">Play/Pause</button>
+            <button onclick="nextFrame()">Next</button>
+            <br>
+            <label>Speed: <input type="range" min="1" max="30" value="10" id="speed"></label>
+        </div>
+
+        <script>
+            const frames = document.querySelectorAll('.frame');
+            let currentFrame = 0;
+            let isPlaying = false;
+            let playInterval;
+            const frameNumber = document.getElementById('frameNumber');
+            const speedControl = document.getElementById('speed');
+
+            // Show first frame initially
+            showFrame(0);
+
+            function showFrame(n) {
+                // Hide all frames
+                frames.forEach(frame => frame.style.display = 'none');
+                
+                // Show the selected frame
+                currentFrame = (n + frames.length) % frames.length;
+                frames[currentFrame].style.display = 'block';
+                frameNumber.textContent = currentFrame + 1;
+            }
+
+            function nextFrame() {
+                showFrame(currentFrame + 1);
+            }
+
+            function prevFrame() {
+                showFrame(currentFrame - 1);
+            }
+
+            function playPause() {
+                if (isPlaying) {
+                    clearInterval(playInterval);
+                    isPlaying = false;
+                } else {
+                    isPlaying = true;
+                    playInterval = setInterval(() => {
+                        nextFrame();
+                    }, 1000 / speedControl.value);
+                }
+            }
+
+            // Update interval when speed changes
+            speedControl.addEventListener('input', () => {
+                if (isPlaying) {
+                    clearInterval(playInterval);
+                    playInterval = setInterval(() => {
+                        nextFrame();
+                    }, 1000 / speedControl.value);
+                }
+            });
+        </script>
+    </body>
+    </html>
+    

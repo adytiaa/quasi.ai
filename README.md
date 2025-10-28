@@ -1,20 +1,14 @@
 # quasi  
 
-Quantum Machine Learning for Enhancing Fluid Dynamic Simulations using PINNs and Quantum PINNs
+Quantum Machine Learning for Enhancing Fluid Dynamic Simulations 
 
 ## Idea
-Leveraging quantum machine learning techniques to enhance fluid dynamic simulations using Physics-Informed Neural Networks (PINNs) and their quantum counterparts (Quantum PINNs or QPINNs). The study will explore various implementations, including attention-enhanced architectures and Physically-Informed Quantum Neural Networks (PI-QNNs). The aim is to demonstrate the potential of quantum computing in solving high-dimensional partial differential equations (PDEs) associated with fluid dynamics, improving computational efficiency and accuracy.
+Leveraging quantum machine learning techniques to enhance fluid dynamic simulations using 
 
-Open source frameworks pennylane (QML), nvidia Modulus (PINNs)
-### https://pennylane.ai/  
-### https://developer.nvidia.com/modulus 
+
 
 ### Objectives
-1. Develop and evaluate classical PINNs for fluid dynamics simulations.
-2. Design and implement Quantum PINNs (QPINNs) leveraging quantum circuits and hybrid quantum-classical models.
-3. Explore attention-enhanced PINNs to improve feature extraction and representation.
-4. Investigate Physically-Informed Quantum Neural Networks (PI-QNNs) to directly incorporate physical constraints into quantum models.
-5. Benchmark the performance of these models in terms of accuracy, efficiency, and scalability.
+
 
 ### Methodology
 
@@ -45,7 +39,7 @@ Open source frameworks pennylane (QML), nvidia Modulus (PINNs)
 
 
 #### Quantum Circuits for Quantum PINNs
-At the heart of QPINNs are parameterized quantum circuits (PQCs), which offer a way to model complex, high-dimensional functions with fewer parameters compared to classical neural networks. These circuits enable the encoding of PDE solutions as quantum states, with optimization performed using hybrid quantum-classical approaches. 
+At the core are parameterized quantum circuits (PQCs), which offer a way to model complex, high-dimensional functions with fewer parameters compared to classical neural networks. These circuits enable the encoding of PDE solutions as quantum states, with optimization performed using hybrid quantum-classical approaches. 
 
 - **Architecture:** QPINNs employ hardware-efficient ansatz designs tailored to specific fluid dynamics problems, incorporating gates that respect the problem’s symmetries.
 - **Attention Mechanisms:** Attention layers are integrated within PQCs to focus computational resources on critical fluid features, such as vortices or shockwaves, enhancing solution accuracy.
@@ -71,24 +65,54 @@ Attention mechanisms in QPINNs prioritize critical regions of the solution space
 - Enhance convergence rates by focusing on regions where PDE residuals are highest.
 - Integrate seamlessly with tensor networks and quantum circuits for hybrid optimization.     
 
+#### Frameworks and Resouces
+   Pennylane, Nvidia PhysicsNeMo, DGX Quantum, Qiskit, IBM Quantum
+https://pennylane.ai/ https://developer.nvidia.com/physicsnemo https://quantum.ibm.com/
 
-Some reference papers which we are looking at in detail
-#### https://www.mdpi.com/1099-4300/26/8/649 
-#### https://arxiv.org/html/2304.11247v3    
-#### http://arxiv.org/pdf/2406.18749.pdf    
-#### https://pubmed.ncbi.nlm.nih.gov/39202119/   
-#### https://github.com/sjunhongshen/UnifiedPDESolvers
-#### https://www.emmi.ai/research/universal-physics-transformer
-#### https://arxiv.org/abs/2409.15683
+#### References
+Some reference papers are in the Quantum and Physics-Informed AI models
+
+Afrah Farea, Saiful Khan, & Mustafa Serdar Celebi. (2025). QCPINN: Quantum-Classical Physics-Informed Neural Networks for Solving PDEs. arXiv:2503.16678 [quant-ph]. https://arxiv.org/abs/2503.16678
+
+
+Hybrid Quantum PINNs for Computational Fluid Dynamics. (2025). IOP Science. https://doi.org/10.1088/2632-2153/ad43b2
+
+
+Quantum Physics-Informed Machine Learning for Multiscale Simulations. (2024). arXiv:2403.08954 [quant-ph]. https://arxiv.org/abs/2403.08954
+
+
+PINNSFORMER: A Transformer-Based Framework for Physics-Informed Neural Networks. (2023). arXiv:2307.11833v3 [cs.LG].
+
+
+Pengpeng Xiao, Muqing Zheng, Anran Jiao, Xiu Yang, & Lu Lu. (2024). Quantum DeepONet: Neural Operators Accelerated by Quantum Computing. [Manuscript].
+
+
+Siddhant Dutta, Nouhaila Innan, Sadok Ben Yahia, & Muhammad Shafique. (2024). AQ-PINNs: Attention-Enhanced Quantum Physics-Informed Neural Networks for Carbon-Efficient Climate Modeling. arXiv:2409.01626v1 [cs.LG].
+
+
+Physics-Informed Neural Networks in Crystal Growth Simulations
+D. Kolberg, C. Anders, & S. Reke. (2023). Fast Prediction of Transport Structures in the Melt by Physics-Informed Neural Networks during ‘VMCz’ Crystal Growth of Silicon. Journal of the Institute of Metals, https://doi.org/10.1080/00219592.2023.2236656
+
+
+J. Ling, Y. Zhang, & D. Chen. (2023). Simulation of Thermal‑Fluid Coupling in Silicon Single Crystal Growth Based on Gradient Normalized Physics‑Informed Neural Network. Physics of Fluids. https://doi.org/10.1063/5.0123811
+ (Code repository: https://github.com/callmedrcom/SIPINN)
+
+
+Z. Wang, F. Chen, & M. Li. (2024). RF-PINNs: Reactive Flow Physics-Informed Neural Networks for Field Reconstruction of Laminar and Turbulent Flames. Journal of Computational Physics, 113698. https://doi.org/10.1016/j.jcp.2024.113698
+
+
+Y. Zhao, H. Liu, & J. Xu. (2025). Research on the Thermal‑Fluid Coupling in the Growth Process of Czochralski Silicon Single Crystals Based on an Improved Physics‑Informed Neural Network. AIP Advances, 15(10), 105202. https://doi.org/10.1063/5.0271778
+
 
 
 ## Contact
 
 Name: A Seshaditya 
 
-E-Mail: aditya.a.sesh@alumni.tu-berlin.de, aditya@zedat.fu-berlin.de, aditya@quasi.digital 
+E-Mail: aditya.a.sesh@alumni.tu-berlin.de, aditya@quasi.digital 
 
-Website: https://adytiaa.github.io/quasi.ai/  https://quasi.digital
+Website: https://adytiaa.github.io/quasi.ai/  
+         https://quasi.digital
 
 LinkedIn: https://www.linkedin.com/in/a-seshaditya-7180822a5/  
 

@@ -1,0 +1,84 @@
+Idea: Development of Real time digital twins by accelerating Computational Fluid Dynamics (CFD) simulations for crystal growth (Silicon Single Crystal) with Physics-inspired geometry aware classical and hybrid quantum-classical approaches 
+
+
+The Problem: The growth of high-quality silicon single crystals—critical for semiconductors, optics, and advanced materials—relies on processes like Czochralski and Bridgman methods, driven by complex, multiscale fluid dynamics, heat transfer, and phase-change phenomena. Accurate modeling requires high-fidelity CFD simulations, but these are computationally prohibitive, often taking days or weeks on HPC systems. This latency prevents real-time monitoring, control, and optimization, forcing manufacturers to rely on costly, empirical trial-and-error approaches.
+Current solutions fail due to:
+    • Speed – Simulations are too slow for in-situ decision-making.
+    • Fidelity – Reduced-order models compromise physical accuracy.
+    • Generality – Models lack adaptability to different geometries and materials.
+This challenge persists because research academia focuses on narrow physics, startups avoid high-risk quantum-classical approaches, and big tech prioritizes generic platforms over domain-specific innovation. The integration of domain-driven physics, heterogeneous computing, and hybrid AI–quantum models remains an untapped opportunity for transformative real-time digital twins in crystal growth.
+
+High-Impact Innovation Program: Development of real-time digital twin for silicon single-crystal growth by fusing quantum computing, AI, and physics-based modeling.
+Core Components:
+    • Hybrid Quantum–Classical Backends: Heterogeneous HPC–QC systems (e.g., NVIDIA DGX Quantum, QPU–CPU–GPU stacks) running classical CFD solvers alongside quantum-accelerated modules for pressure solves, optimization, and inverse problems.
+    • Physics-Informed, Geometry-Aware AI: Surrogates such as PI-GANO and GAOT integrate Navier–Stokes, heat transfer, and solidification kinetics with mesh-aware graph neural operators for accurate, generalizable flow–thermal predictions.
+    • Quantum-Accelerated Solvers: Variational Quantum Linear Solvers (VQLS), VQE, and variational time-stepping methods for PDEs, coupled with Hamiltonian encodings, to speed up sparse linear solves and nonlinear PDE dynamics relevant to melt flow and phase change.
+    • Inverse Control & Optimization: Quantum optimization loops adjust process parameters (e.g., pull rate, rotation speed, thermal gradient) in real time to minimize defects and maintain target crystal shapes.
+Platform Architecture:
+    1. Hybrid Simulation Backend – GPU-based CFD for geometry and streaming flow; QPU-accelerated routines for linear solves and optimization.
+    2. Surrogate Modeling Layer – PI-GANO/GAOT modules trained on multiphysics CFD data for orders-of-magnitude faster inference.
+    3. Quantum-Accelerated Control – VQA-based loops for parameter tuning and steady-state target tracking.
+    4. Multi-Modal Data Integration – Real-time sensor fusion with adaptive surrogate retraining to handle drift and geometry variation.
+
+
+
+
+
+
+
+
+
+Innovations:
+    • Physics-informed loss functions embedding PDE residuals directly into training (PINNs, GN-PINNs, RF-PINNs, PI-GANO, GAOT).
+    • Geometry-aware mesh graph encodings with node features like curvature, local gradients, and resolution.
+    • Quantum iterative PDE solvers (Jacobi/Gauss–Seidel, HHL-based) for CFD subproblems.
+    • Transferable architecture applicable to multiple crystal growth processes.
+      
+What needs to become possible?
+    1. Ultra-fast, high-fidelity simulation of 3D, non-linear, multiphase CFD systems in real-world reactor geometries.
+    2. Model generalization across materials, scales, and reactor designs with minimal retraining.
+    3. Differentiable, inverse-model capabilities for real-time process control, optimization, and AI co-design of reactors.
+Path to prototype
+    • Develop and validate a hybrid physics-based AI surrogate for 2D crystal growth (e.g., simplified Czochralski) with quantum modules for sparse linear solvers. 
+    • Integrate hybrid quantum-classical solvers into the HPC stack. Scale to 3D geometries Build a simulation-as-a-service layer that supports real-time data ingestion and feedback
+    • Validation across different semi conducting materials (GaN, SiC, Si, Perovskites).
+    • Demonstrate closed-loop control in a physical lab reactor via the digital twin, achieving >10x reduction in modeling time and increased process efficiency. 
+Why now?
+    • Quantum-classical hardware integration is emerging, notably NVIDIA DGX Quantum and IonQ’s quantum networking stack.
+    • Neural operators and physics-aware GNNs have reached maturity and demonstrated orders-of-magnitude speedups in surrogate modeling.
+    • Materials science is bottlenecked by compute-bound simulation—and global demand for semiconductors and clean energy devices is skyrocketing.
+Societal, economic, and geopolitical pressures are aligning around sovereign materials infrastructure—real-time digital twins are a critical enabler.
+
+Scale & Impact: This Idea demands a convergent, multidisciplinary effort—bringing together quantum physicists, AI researchers, CFD specialists, HPC engineers, and crystal growth experts. It requires access to quantum hardware (QPU time), HPC infrastructure, and test-bed crystal growth reactors, alongside deep collaboration with academic labs, quantum platform providers (e.g., NVIDIA, Rigetti, IQM), and materials manufacturers.
+
+A €50M, 3-year investment will enable:
+    • Multi-site coordination with integrated data and cloud infrastructure
+    • Recruitment of top talent across disciplines
+    • Leasing of quantum and HPC resources
+    • Development of an open-source digital twin platform (software, APIs, datasets)
+Transformative Milestones:
+    • 1000× faster simulations than traditional CFD for benchmark scenarios
+    • Real-time, closed-loop control in an operational growth chamber (TRL6+)
+    • Cross-process transferability to at least different crystal growth approaches
+    • A universal, open digital twin stack deployable across industries such as semiconductors, photovoltaics (Solar Cells), and fusion materials
+Why I’m the Right Person to Lead This:  I have carried out my doctoral studies in the area of Quantum Chemistry (TU Berlin) which involved theoretical development of electron correlation models, their Implementation, and evaluation. After finishing my doctoral work, I worked on a project involving Monte Carlo approaches for evaluation of electron correlations (FU Berlin).  Transitioning into a Research Data Scientist role, I contributed to BMBF and Bavarian funding projects such as KIKOSA (Edge ML for laser weld defect detection using KubeEdge, K3ai, and Sedna-AI) and KILIDAR (deep learning for LiDAR–camera recalibration, ray-optic simulations via surrogate ML, and Physics-Informed Neural Networks).
+Currently, I'm developing Quasi AI, an early-stage startup that combines quantum computing and AI to accelerate CFD simulations. We were part of the Berlin Quantum Pioneer program (Berlin Partner, INAMM, Leap/Humboldt Innovation). My team consists of:
+    • Principal Scientific Research Lead and Scientific Advisor: Prof. Dr. Alexander Heinlein, TU Delft (Scientific Machine Learning/SciML, https://searhein.github.io/)
+    • CTO: Aswin Pyakurel – Machine Learning Engineer with a background in Bioinformatics and Simulations (LinkedIn: aswinpyakurel) 
+    • CFO: Thomas Kutschera – Business and Product Development (thomas-kutschera-44393415a) 
+    • CSO: Adriano-Macarone Palmieri – Research Scientist in Quantum Physics, Photonics, and Software Engineering (adriano-macarone-palmieri-4b305111b) 
+We are collaborating with research institutes like IKZ (CFD simulations for Crystal Growth), ZIB Berlin,  DESY, and TU Berlin. Additionally, we exploring opportunities with Quantum Delta NL and research groups at TU Delft, focusing on Quantum and AI for Simulations.
+Our vision for the next two years is to validate Quantum Physics-Inspired AI models on heterogeneous hardware integrating Quantum with HPC for accelerating CFD simulations for silicon crystal growth. We have also engaged with industry leaders in quantum algorithms and simulations to explore European innovation grants in this field.
+We have finished the Creative Destruction Lab (CDL-Quantum Bootcamp) and  have secured the compute resources from NVIDIA Inception, IBM Quantum credits, and NVIDIA DGX systems, for development of hybrid quantum-classical solutions. With a unique blend of domain expertise, computational innovation, and access to cutting-edge resources, we are well-positioned to deliver this transformative breakthroughs.
+
+Specific References:
+    • Pelzer, J., Verburg, C., & Heinlein, A. (2025). Few-shot learning by explicit physics integration: An application to groundwater heat transport. arXiv:2507.06062. https://arxiv.org/abs/2507.06062
+    • Grimm, V., Heinlein, A., & Klawonn, A. (2025). Learning the solution operator of two-dimensional incompressible Navier–Stokes equations using physics-aware convolutional neural networks. Journal of Computational Physics, 114027. https://doi.org/10.1016/j.jcp.2025.114027
+    • Incompressible Navier–Stokes solve on noisy quantum hardware via a hybrid quantum–classical scheme. arXiv:2406.00280. https://arxiv.org/abs/2406.00280
+    • Chen, X., Xu, J., Zhang, L., Chen, J., & Han, X. (2023). Fast prediction of transport structures in the melt by physics-informed neural networks during ‘VMCz’ crystal growth of silicon. Journal of Computational Physics, 00219592.2023.2236656. https://doi.org/10.1080/00219592.2023.2236656
+    • Li, Y., Zhang, X., & Wang, H. (2023). Simulation of thermal-fluid coupling in silicon single crystal growth based on gradient normalized physics-informed neural network. Physics of Fluids, 35(10), 107104. https://doi.org/10.1063/5.0123811
+    • Zhang, T., Liu, Y., & Sun, Y. (2024). RF-PINNs: Reactive flow physics-informed neural networks for field reconstruction of laminar and turbulent flames. Journal of Computational Physics, 113698. https://doi.org/10.1016/j.jcp.2024.113698
+    • Li, J., Wang, C., & Zhao, P. (2024). Hybrid quantum PINNs for computational fluid dynamics. Machine Learning: Science and Technology, 2632-2153/ad43b2. https://doi.org/10.1088/2632-2153/ad43b2
+    • Zhang, L., & Wang, H. (2025). QCPINN: Quantum–classical physics-informed neural networks. arXiv:2503.16678. https://arxiv.org/abs/2503.16678
+    • Zhang, Y., Li, X., & Chen, M. (2024). Quantum physics-informed machine learning for multiscale simulations. arXiv:2403.08954. https://arxiv.org/abs/2403.08954
+    • Li, X., Zhang, J., & Huang, Q. (2024). Quantum DeepONet: Neural operators accelerated by quantum computing. arXiv:2409.15683. https://arxiv.org/abs/2409.15683

@@ -111,8 +111,7 @@ Name: A Seshaditya
 
 E-Mail: aditya.a.sesh@alumni.tu-berlin.de, aditya@quasi.digital 
 
-Website: https://adytiaa.github.io/quasi.ai/  
-         https://quasi.digital
+Website: https://quasi.digital
 
 LinkedIn: https://www.linkedin.com/in/a-seshaditya-7180822a5/  
 

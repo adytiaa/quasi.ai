@@ -1,3 +1,4 @@
+# the sample code for doing crystal growth simulations using PINNs and its variants
 import argparse
 import torch
 import torch.optim as optim
